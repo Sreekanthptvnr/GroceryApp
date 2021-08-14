@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Test">
+    
+	<test thread-count="5" name="ChromeTest">
+	
+		<parameter name="browser" value="chrome" />
+		<groups>  
+      <run>  
+         <include name="UI Test"/>  
+      </run>
+ </groups>  
+		<classes>
+			<class name="com.executeClasses.ExecuteLogin" />
+		</classes>
+		</test>
+</suite> <!-- Suite -->
